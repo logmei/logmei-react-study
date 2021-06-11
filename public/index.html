@@ -3,5 +3,37 @@
   <head></head>
   <body>
     <div id="root"></div>
+   <img src="https://www.baidu.com/s?wd=csrf&rsv_spt=1&rsv_iqid=0xfc073ea50002f115&issp=1&f=8&rsv_bp=1&rsv_idx=2&ie=utf-8&rqlang=cn&tn=baiduhome_pg&rsv_enter=1&rsv_dl=tb&oq=csrf%25E6%2594%25BB%25E5%2587%25BB%25E5%258E%259F%25E7%2590%2586%25E4%25B8%258E%25E8%25A7%25A3%25E5%2586%25B3%25E6%2596%25B9%25E6%25B3%2595&rsv_btype=t&inputT=2150&rsv_t=6c6calUOeFPEaqKBZ0T13VyZ9AH5UoepYNtIvxeBy12mXtX8Q%2BLc44GY4rSPPBZ%2FYDol&rsv_pq=c52a8f02000147c1&rsv_sug3=57&rsv_sug1=56&rsv_sug7=100&rsv_sug2=0&rsv_sug4=2812"/>
+
   </body>
+  <!-- <script>
+
+    function imgLoad(url){
+      return new Promise((resolve,reject)=>{
+        var request = new XMLHttpRequest()
+        request.open('GET',url)
+        request.responseType = 'blob'
+        request.onload = function(){
+          if(request.status === 200){
+            resolve(request.response)
+          } else {
+            reject(Error('error'))
+          }
+        }
+        request.onerror = ()=>{reject(Error('error'))}
+        request.send()
+      })
+    }
+    
+    var body = document.querySelector('body');
+    var myImage = new Image();
+    
+    imgLoad('https://gimg2.baidu.com/image_search/src=http%3A%2F%2F1812.img.pp.sohu.com.cn%2Fimages%2Fblog%2F2009%2F11%2F18%2F18%2F8%2F125b6560a6ag214.jpg&refer=http%3A%2F%2F1812.img.pp.sohu.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1625830774&t=5fab2149c7e7ae8b4d0a93fa51b09699').then(function(response) {
+      var imageURL = window.URL.createObjectURL(response);
+      myImage.src = imageURL;
+      body.appendChild(myImage);
+    }, function(Error) {
+      console.log(Error);
+    });
+        </script> -->
 </html>

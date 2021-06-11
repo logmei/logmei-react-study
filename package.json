@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve"
+    "start": "webpack serve --hot-only"
   },
   "author": "",
   "license": "ISC",
@@ -22,5 +22,8 @@
     "webpack": "^5.37.1",
     "webpack-cli": "^4.7.0",
     "webpack-dev-server": "^3.11.2"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^9.0.0"
   }
 }

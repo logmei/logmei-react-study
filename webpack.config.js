@@ -1,10 +1,13 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   mode:'development',
   devtool:'source-map',
-  entry:'./src/index.js',
+  entry:{
+    index:'./src/horseRaceLamp/index.js',
+  },
   output:{
     path:path.resolve(__dirname,'dist'),
     filename:'[name].js',
@@ -29,6 +32,9 @@ module.exports = {
     ]
   },
   plugins:[
-    new HtmlWebpackPlugin({template:'./public/index.html'})
+    new HtmlWebpackPlugin({template:'./public/index.html'}),
+    new CopyWebpackPlugin({
+      patterns:[{from:'./src/nothing.png'},{from:'./src/test.js'}]
+    })
   ]
 }

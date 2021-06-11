@@ -20,3 +20,14 @@ console.log('jsx输出',virtualDom)
 console.log('react createElement',virtualDom1)
 console.log('自定义的createElement',virtualDom2)
 console.log('判断自定义的element是否符合为有效的ReactElement',React.isValidElement(virtualDom2))
+
+
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('/sw.js').then(res=>{
+    console.log('register success')
+  }).catch(err=>{
+    console.log('register failed')
+  })
+}
+
+
