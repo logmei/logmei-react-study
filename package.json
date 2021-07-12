@@ -4,16 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve --hot-only"
+    "start": "webpack serve --hot-only",
+    "test": "jest "
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@babel/core": "^7.14.3",
+    "@babel/core": "^7.14.6",
     "@babel/plugin-proposal-class-properties": "^7.13.0",
     "@babel/plugin-proposal-decorators": "^7.14.2",
     "@babel/plugin-transform-react-jsx": "^7.14.3",
-    "@babel/preset-env": "^7.14.2",
+    "@babel/preset-env": "^7.14.7",
     "@babel/preset-react": "^7.13.13",
     "babel-loader": "^8.2.2",
     "html-webpack-plugin": "^5.3.1",
@@ -24,6 +25,9 @@
     "webpack-dev-server": "^3.11.2"
   },
   "devDependencies": {
-    "copy-webpack-plugin": "^9.0.0"
+    "babel-jest": "^27.0.6",
+    "copy-webpack-plugin": "^9.0.0",
+    "jest": "^27.0.6",
+    "react-test-renderer": "^17.0.2"
   }
 }

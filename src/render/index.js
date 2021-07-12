@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 export class App extends React.Component{
-  state = { list:new Array(1000000000).fill(0)}
+  state = { list:new Array(100000).fill(0)}
   add = ()=>{
     this.setState({
       list:[...this.state.list,1]
@@ -22,6 +22,6 @@ export class App extends React.Component{
   }
 }
 
-// ReactDOM.render(<App></App>,document.getElementById('root'))
-ReactDOM.unstable_renderSubtreeIntoContainer(document.getElementById('root')).render(<App></App>)
+ReactDOM.render(<App></App>,document.getElementById('root'))
+// ReactDOM.unstable_renderSubtreeIntoContainer(document.getElementById('root')).render(<App></App>)
 

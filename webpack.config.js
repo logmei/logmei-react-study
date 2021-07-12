@@ -6,7 +6,7 @@ module.exports = {
   mode:'development',
   devtool:'source-map',
   entry:{
-    index:'./src/horseRaceLamp/index.js',
+    index:'./src/render/index.js',
   },
   output:{
     path:path.resolve(__dirname,'dist'),
