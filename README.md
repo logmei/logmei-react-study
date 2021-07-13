@@ -9,3 +9,8 @@ npm install @babel/core @babel/plugin-proposal-class-properties @babel/plugin-pr
 
 > 安装react实验版
 npm install react@experimental react-dom@experimental --save
+
+### 测试用例
+文档：https://www.jestjs.cn/docs/getting-started
+#### 运行测试用例 
+npm run test
